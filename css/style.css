@@ -73,11 +73,17 @@ ul{
     text-align: center;
 }
 /* margins and paddings utilities */
+.mb-5{
+    margin-bottom: 5px;
+}
 .mt-10{
     margin-top: 10px;
 }
 .mb-10{
     margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
 }
 .mb-30{
     margin-bottom: 30px;
@@ -134,6 +140,9 @@ main{
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 0.8rem;
 }
+#call-to-action .btn{
+    margin: 0px 15px;
+}
 .btn:hover{
     transform: scale(1.1);
 }
@@ -169,7 +178,6 @@ main{
     /* /menu nav */
     
 /* inner-container */
-
 .inner-container .single-box-container{
     width: calc((100% / 6) - 20px);
 }
@@ -198,7 +206,19 @@ main{
 .single-box-container .option-img:hover .play-button{
     opacity: 100;
 }
+.option-info a{
+    font-size: 0.7rem;
+}
+.inner-container h4{
+    color: var(--grey);
+    font-size: 0.8rem;
+}
 
+.single-box-container .cicle-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+    
 
     /* /inner-container */
 
