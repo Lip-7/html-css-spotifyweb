@@ -191,6 +191,15 @@ main{
 .main-nav-footer .link:hover a{
     color: white;
 }
+.main-nav-footer .link{
+    padding-left: 3px;
+}
+.main-btn{
+    cursor: pointer;
+}
+.main-nav .small-logo{
+    display: none;
+}
 
 /* /main-nav */
 
@@ -350,7 +359,37 @@ main{
     .inner-container .single-box-container{
         width: calc((100%) - 20px);
     }
+    /* main-nav */
+    .hide-on-resize{
+        display: none;
+    }
+    nav.main-nav{
+        width: 50px;
+    }
+    /* main content */
+    #call-to-action {
+        left: 50px;
+        width: calc(100% - 68px);
+    }
+    .main-content {
+        width: calc(100% - 50px);
+    }
+    .main-nav-footer .user-img{
+        position: relative;
+        left: -4px;
+    }
+    .main-nav .small-logo{
+        display: block;
+    }
+    .main-nav .big-logo{
+        display: none;
+    }
+    .main-nav .logo {
+        width: 100%;
 }
+
+
+
 
 @media screen and (max-height:180px) {
     #call-to-action{
