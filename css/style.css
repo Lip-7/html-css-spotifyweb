@@ -161,10 +161,30 @@ main{
 .inner-container .single-box-container{
     width: calc(100% / 6);
 }
-
+.inner-container .option-img{
+    transition: all 0.5s ease-out;
+    position: relative;
+}
 
 .inner-container .single-box-container img{
     width: 100%;
+    cursor: pointer;
+}
+.inner-container .option-img:hover{
+    filter: brightness(0.6);
+}
+.single-box-container .play-button{
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    cursor: pointer;
+}
+.single-box-container .option-img:hover .play-button{
+    opacity: 100;
 }
 
 
