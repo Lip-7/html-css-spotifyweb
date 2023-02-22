@@ -185,6 +185,12 @@ main{
     border: 0.1px solid var(--grey);
     width: calc(230px - 30px);
 }
+.main-nav-footer .link:hover{
+    color: white;
+}
+.main-nav-footer .link:hover a{
+    color: white;
+}
 
 /* /main-nav */
 
