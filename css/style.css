@@ -58,6 +58,9 @@ ul{
 .flex-w{
     flex-wrap: wrap;
 }
+.gap-10{
+    gap: 10px;
+}
 .gap-20{
     gap: 20px;
 }
@@ -114,12 +117,78 @@ main{
     width: 230px;
     min-height: 480px;
     background-color: var(--black);
+    padding: 15px;
+    position: relative;
 }
 .main-nav a{
     color: white;
 }
+.main-nav .logo{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.main-nav .logo img{
+    width: 100%;
+}
+.main-nav li{
+    color: var(--grey);
+}
+.main-nav li a{
+    color: var(--grey);
+}
+.main-nav li:hover a{
+    color: var(--white);
+}
+.main-nav li:hover{
+    color: var(--white);
+}
+.main-nav section.playlists li a{
+    font-weight: 600;
+}
+.main-nav .playlists li>i{
+    color: var(--black);
+    font-size: 1.3rem;
+    background-color: var(--light-grey);
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+.main-nav .playlists li:hover i{
+    background-color: white;
+}
+
+    /* main-nav-footer */
+
+.main-nav-footer .download{
+    color: var(--grey);
+}
+.main-nav-footer .download a{
+    color: var(--grey);
+}
+.main-nav-footer{
+    position: absolute;
+    bottom: 0px;
+}
+
+.main-nav-footer .user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow:hidden;
+    background-color: var(--light-grey);
+}
+.main-nav-footer .user-img img{
+ width: 100%;
+}
+.main-nav-footer .hr{
+    border: 0.1px solid var(--grey);
+    width: calc(230px - 30px);
+}
 
 /* /main-nav */
+
+
 /* main-content */
 .main-content{
     width: calc(100% - 230px);
