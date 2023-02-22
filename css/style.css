@@ -157,6 +157,13 @@ main{
 .main-nav .playlists li:hover i{
     background-color: white;
 }
+.main-nav .library{
+    width: 1rem;
+    display: inline-block;
+}
+.main-nav .library img{
+    width: 100%;
+}
 
     /* main-nav-footer */
 
