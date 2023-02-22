@@ -34,6 +34,7 @@ ul{
     display: inline-block;
     border: 1px solid var(--white);
     border-radius: 30px;
+    transition: transform 1s ease-in-out;
 }
 /* flex options */
 .d-flex{
@@ -51,6 +52,9 @@ ul{
 .flex-col{
     flex-direction: column;
 }
+.flex-w{
+    flex-wrap: wrap;
+}
 
 /* text utilities*/
 .text-up{
@@ -58,6 +62,19 @@ ul{
 }
 .text-w{
     color: white;
+}
+.text-center{
+    text-align: center;
+}
+/* margins and paddings utilities */
+.mt-10{
+    margin-top: 10px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-30{
+    margin-bottom: 30px;
 }
 
 
@@ -96,6 +113,8 @@ main{
     background-color: var(--dark-color);
     padding-top: 80px;
 }
+
+/* call to action */
 #call-to-action{
     position: fixed;
     top: 0;
@@ -104,27 +123,57 @@ main{
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3);
 }
-
+.btn:hover{
+    transform: scale(1.1);
+}
 /* main-section */
-
+.main-section{
+    padding: 0px 30px;
+}
     /* menu nav */
-    .main-section nav ul{
-        padding: 15px;
-    }
-    .main-section nav li{
-        margin: 0px 15px;
-    }
-    .menu-underline{
-        background-color: var(--highlight);
-        height: 3px;
-        width: 30px;
-        margin-top: 1px;
-        opacity: 0;
-    }
-    .main-section nav li:hover .menu-underline{
-        opacity: 100;
-    }
+.main-section nav ul{
+    padding: 15px;
+}
+.main-section nav li{
+    margin: 0px 15px;
+}
+.menu-underline{
+    background-color: var(--highlight);
+    height: 3px;
+    width: 5px;
+    margin-top: 1px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.main-section nav li:hover .menu-underline{
+    opacity: 100;
+    width: 30px;
+
+}
+.main-section nav li:hover a{
+    color: white;
+    
+}
     /* /menu nav */
+    
+/* inner-container */
+
+.inner-container .single-box-container{
+    width: calc(100% / 6);
+}
+
+
+.inner-container .single-box-container img{
+    width: 100%;
+}
+
+
+    /* /inner-container */
+
+
+
+
+
 
 /* /main-section */
 /* /main-content */
