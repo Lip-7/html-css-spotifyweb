@@ -122,6 +122,7 @@ main{
     padding: 15px;
     position: relative;
     padding-bottom: 90px;
+    min-height: 350px;
 }
 .main-nav a{
     color: white;
@@ -237,6 +238,9 @@ main{
     padding-left: 3px;
 }
 
+.main-nav .border.special{
+    top: -4px;
+}
 
 
 /* /main-nav */
@@ -406,7 +410,7 @@ main{
     cursor: pointer;
 }
 .playbar-controls .controls-top i.fa-circle-play{
-    font-size: 2rem;
+    font-size: 1.7rem;
     scale: 0.8;
     transition: scale 0.3s ease-in;
 }
@@ -414,9 +418,30 @@ main{
     scale: 1;
 }
 .playbar-controls .controls-bottom input{
+    width: 100%;
+}
+.playbar-controls .controls-bottom .timeline{
     width: 80%;
 }
-
+.playbar-controls output{
+    padding: 0px 10px;
+    font-size: 0.5rem;
+    position: relative;
+    top: -3px;
+}
+.playbar-controls span{
+    padding: 0px 10px;
+    font-size: 0.5rem;
+    position: relative;
+    top: -10px;
+}
+.playbar-controls .timeline{
+    position: relative;
+    top: -10px;
+}
+.timeline:hover input[type="range"]::-webkit-slider-thumb{
+    opacity: 1;
+}
 
 
 /* player vol */
@@ -433,10 +458,58 @@ main{
     opacity: 1;
 }
 input[type=range]{
+    -webkit-appearance: none;
     cursor: pointer;
+    background: var(--grey);
+    height: 4px;
+    border-radius: 5px;
+    background-image: linear-gradient(var(--light-grey), var(--light-grey));
+    background-size: 25% 100%;
+    background-repeat: no-repeat;
 }
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 2px 0 #555;
+    transition: all 0.5s;
+    opacity: 0;
+}
+
+
+/* alternative browsers */
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 2px 0 #555;
+    transition: all 0.5s;
+}
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0 0 2px 0 #555;
+    transition: all 0.5s;
+}
+
+
 .playbar-vol input[type=range]{
+    width: 100%;
+}
+.playbar-vol .vol-control{
     width: 50%;
+    position: relative;
+    top: -4px;
+}
+.vol-control:hover input[type="range"]::-webkit-slider-thumb{
+    opacity: 1;
 }
 
 
