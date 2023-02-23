@@ -75,6 +75,9 @@ ul{
 .text-center{
     text-align: center;
 }
+.text-small{
+    font-size: 0.7rem;
+}
 /* margins and paddings utilities */
 .mb-5{
     margin-bottom: 5px;
@@ -357,6 +360,41 @@ main{
     background-color: var(--dark-grey);
     z-index: 2;
 }
+/* player-album */
+.playbar-album{
+    width: 230px;
+    height: 100%;
+    padding: 15px;
+}
+.playbar-album .album-img{
+    width: 40px;
+}
+.playbar-album .album-img img{
+    width: 100%;
+}
+.playbar-album .song-actions i{
+    padding: 4px;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.playbar-album .song-actions i:hover{
+    opacity: 1;
+}
+
+
+/* player-controls */
+.playbar-controls{
+    width: 40%;
+    height: 100%;
+
+}
+/* player vol */
+.playbar-vol{
+    width: 230px;
+    height: 100%;
+}
+
 /* /playbar */
 
 
