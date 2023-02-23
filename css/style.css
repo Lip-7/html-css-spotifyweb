@@ -230,6 +230,7 @@ main{
     height: 80px;
     background-color: rgba(0, 0, 0, 0.3);
     font-size: 0.8rem;
+    z-index: 2;
 }
 #call-to-action .btn{
     margin: 0px 15px;
@@ -393,6 +394,7 @@ main{
     }
     .main-nav .logo {
         width: 100%;
+    }
 }
 
 
@@ -404,6 +406,7 @@ main{
         top: -75px;
         left: 0px;
         width: 100%;
+        z-index: 0;
     }
     
 }
