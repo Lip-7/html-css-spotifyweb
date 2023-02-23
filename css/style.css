@@ -372,7 +372,7 @@ main{
 .playbar-album .album-img img{
     width: 100%;
 }
-.playbar-album .song-actions i{
+.playbar-album .song-actions i, .playbar-vol i{
     padding: 4px;
     opacity: 0.6;
     cursor: pointer;
@@ -387,13 +387,20 @@ main{
 .playbar-controls{
     width: 40%;
     height: 100%;
-
+}
+.playbar-controls .controls-top i{
+    font-size: 1rem;
+    padding: 15px 15px;
 }
 /* player vol */
 .playbar-vol{
     width: 230px;
     height: 100%;
 }
+.playbar-vol i{
+    padding: 7px;
+}
+
 
 /* /playbar */
 
