@@ -164,6 +164,32 @@ main{
 .main-nav .library img{
     width: 100%;
 }
+.main-btn{
+    cursor: pointer;
+}
+.main-nav .small-logo{
+    display: none;
+}
+.main-btn li img{
+    opacity: 0.7;
+    width: 20px;
+}
+.icon-text.high-reposition{
+    position: relative;
+    top: -4px;
+}
+.main-btn li:hover img{
+    opacity: 1;
+}
+.main-btn span.border{
+    border: 2px solid var(--highlight);
+    position: relative;
+    left: -15px;
+    opacity: 0;
+}
+.main-btn li:hover span.border{
+    opacity: 1;
+}
 
     /* main-nav-footer */
 
@@ -203,24 +229,8 @@ main{
 .main-nav-footer .link{
     padding-left: 3px;
 }
-.main-btn{
-    cursor: pointer;
-}
-.main-nav .small-logo{
-    display: none;
-}
-.main-btn li img{
-    opacity: 0.7;
-    width: 20px;
-}
-.icon-text.high-reposition{
-    position: relative;
-    top: -4px;
-}
-.main-btn li:hover img{
-    opacity: 1;
 
-}
+
 
 /* /main-nav */
 
