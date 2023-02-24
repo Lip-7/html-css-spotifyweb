@@ -194,8 +194,13 @@ main{
     position: relative;
     left: -15px;
     opacity: 0;
+    transition: all 0.5s;
 }
 .main-btn li:hover span.border{
+    opacity: 1;
+
+}
+.main-btn li .actived.border{
     opacity: 1;
 }
 
@@ -289,14 +294,17 @@ main{
     background-color: var(--highlight);
     height: 3px;
     width: 5px;
-    margin-top: 1px;
+    margin-top: 2px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
 }
 .main-section nav li:hover .menu-underline{
     opacity: 100;
-    width: 30px;
-
+    width: 30%;
+}
+.main-section nav li .actived.menu-underline{
+    opacity: 100;
+    width: 30%;
 }
 .main-section nav li:hover a{
     color: white;
