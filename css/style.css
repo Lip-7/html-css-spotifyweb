@@ -588,7 +588,26 @@ input[type="range"]::-moz-range-thumb {
     .main-nav .logo {
         width: 100%;
     }
+    .playbar-vol{
+        position: relative;
+    }
+    .playbar-vol i.fa-volume-high:hover ~ div.vol-control{
+        display: block;
+        rotate: 270deg;
+        position: absolute;
+        top: -20px;
+        right: -30px;
+    } 
 }
+
+/* extra-extra-small */
+@media screen and (max-width:410px) {
+    .extra-extra-small-hide{
+        display: none;
+    }
+
+}
+
 
 
 
