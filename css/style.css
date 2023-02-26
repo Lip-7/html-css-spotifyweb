@@ -18,6 +18,23 @@ html{
     --light-grey: #C1C1C1;
     --highlight: #ADFF2F;
 }
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #51ff2e #141922;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px;
+}
+*::-webkit-scrollbar-track {
+  background: #141922;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #51ff2e;
+  border-radius: 10px;
+  border: 2px solid #141922;
+}
 
 /* general utilities */
 
