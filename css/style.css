@@ -342,7 +342,7 @@ main{
     width: 100%;
     cursor: pointer;
 }
-.inner-container .option-img:hover{
+.inner-container .option-img:hover img{
     filter: brightness(0.6);
 }
 .single-box-container .play-button{
